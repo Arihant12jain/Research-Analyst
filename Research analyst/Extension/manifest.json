@@ -1,0 +1,24 @@
+{
+    "name": "Research Analyst",
+    "description": "Create Summary",
+    "version": "1.0",
+    "manifest_version": 3,
+  
+    "permissions": ["activeTab", "storage", "sidePanel", "scripting"],
+  
+    "host_permissions": ["http://localhost:3235/*", "<all_urls>"],
+  
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    },
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+  
+    "action": {
+      "default_title": "Research Analyst",
+      "default_panel": "sidepanel.html"
+    }
+  }
+  
